@@ -1,0 +1,17 @@
+<!-- vanilla.html -->
+<!DOCTYPE html>
+<html>
+<body>
+  <h1 id="title">Original Title</h1>
+  <button onclick="changeTitleVanilla()">Change Title (Vanilla JS)</button>
+  <p id="counter">Vanilla DOM Updates: 0</p>
+  <script>
+    let vanillaUpdates = 0;
+    function changeTitleVanilla() {
+      document.getElementById("title").textContent = "Updated Title (Vanilla)";
+      vanillaUpdates++;
+      document.getElementById("counter").textContent = `Vanilla DOM Updates: ${vanillaUpdates}`;
+    }
+  </script>
+</body>
+</html>
